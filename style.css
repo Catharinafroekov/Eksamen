@@ -1,0 +1,347 @@
+/* font */
+
+@font-face {
+  font-family: "Unna";
+  src: url(../font/unna.woff2);
+}
+
+@font-face {
+  font-family: "Julius";
+  src: url(../font/julius.woff2);
+}
+
+@font-face {
+  font-family: "kursiv";
+  src: url(../font/johndavidsondemo-4bjvx-webfont.woff2);
+}
+
+/* baggrunde */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: beige;
+}
+
+.baggrund {
+  height: auto;
+  background: linear-gradient(
+    to bottom,
+    beige 0%,
+    beige 70%,
+    #e2d69a 70%,
+    #e2d69a 100%
+  );
+}
+
+.baggrund1 {
+  height: auto;
+  background: linear-gradient(
+    to right,
+    #e2d69a 0%,
+    #e2d69a 20%,
+    beige 20%,
+    beige 100%
+  );
+}
+
+/* tekst */
+
+h1 {
+  position: absolute;
+  z-index: 1;
+  font-family: "kursiv";
+  font-size: 700%;
+  top: 15%;
+  margin-left: 14%;
+  font-weight: bold;
+}
+
+h2{
+  font-family: "Unna";
+  font-size: 200%;
+}
+
+h3{
+  font-family: "Unna";
+
+}
+
+p {
+  font-family: "Unna";
+  word-break: keep-all;
+  max-width: 45ch;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.ord /* 3 beskrivende ord på cv */{
+  border: rgb(251, 178, 43) solid 2px;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  padding-top: 2%;
+  border-radius: 50%;
+  font-family: "Julius";
+  font-size: 20px;
+}
+
+.font {
+  font-family: "Julius";
+}
+
+
+/* Billeder */
+
+.img1 /* forside billede */ {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  padding-bottom: 7%;
+  margin-top: -10%;
+  filter: blur(10px);
+}
+
+.mig /* billede af mig på cv */{
+  height: auto;
+  width: 50%;
+  border: 1px solid #e2d69a;
+  border-radius: 10%;
+  margin: 20%;
+}
+
+.projekt img{
+  height: 50%;
+  width: 100%;
+  filter: saturate(0.2);
+}
+
+.projekt img:hover {
+  filter: saturate(1);
+}
+
+.projekt2 {
+  height: 500px;
+  width: 100%;
+}
+
+/* knapper */
+
+.cv a{
+  position: absolute;
+  z-index: 1;
+  border: rgb(251, 178, 43) solid 2px;
+  height: 40px;
+  width: 70px;
+  padding-top: 1%;
+  text-align: center;
+  font-family: "Julius";
+  font-weight: bold;
+  font-size: larger;
+  text-decoration: none;
+  top: 80%;
+  left: 80%;
+  color: black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cv a:hover {
+  color: rgb(251, 178, 43);
+}
+
+.knap /* knap tilbage til projektside */{
+  position: absolute;
+right: 1%;
+border-bottom: 1%;
+  border: rgb(251, 178, 43) solid 2px;
+  color: black;
+  text-decoration: none;
+  padding: 1%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+a.knap:hover {
+  color: rgb(251, 178, 43);
+}
+
+a.btn:hover {
+color: rgb(251, 178, 43) ;
+}
+
+.btn /* knapper på projekt siden */{
+  display: flex;
+  justify-content:space-evenly;
+  border: 1px solid #e2d69a;
+  color: black;
+  font-family: "Julius";
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.web {
+  height: auto;
+  width: 100%;
+  border: 1px solid #e2d69a;
+  
+}
+
+.initial a/* højre top */{
+  position: relative;
+  font-family: "Unna";
+  font-size: 25px;
+  z-index: 2;
+  color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+.center{
+  margin: auto;
+  align-items: center;
+}
+
+/* header og menu */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 1%;
+}
+
+.margin {
+  margin-bottom: 5%;
+}
+
+.flex {
+  display: flex;
+  justify-content:space-evenly;
+  align-items:center;
+}
+
+.stil {
+  border: black solid 1px;
+  background-color: #e2d69a;
+  text-align: center;
+  width: 110%;
+}
+
+hr.solid /* streg på cv */{
+  border-top: 1px solid #c3b570;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+ul , ol /* lister */{
+  list-style: none;
+  background-color: rgb(240, 240, 216);
+  border: #e2d69a 1px solid;
+word-break: keep-all;
+padding: 25px;
+font-size: 18px;
+line-height: 27px;
+}
+
+.checked {
+  color: rgb(251, 178, 43);
+}
+
+.dot {
+  list-style: circle;
+}
+
+
+/* menu */
+nav {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: start;
+}
+
+.menu a:hover {
+  color: rgb(251, 178, 43);
+}
+
+/* burgermenu */
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+.burger {
+  display: block;
+}
+.burger.active .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  transition: 0.2s linear;
+}
+
+.burger.active .line:nth-child(2) {
+  opacity: 0;
+  transition: 0.15s linear;
+}
+
+.burger.active .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  transition: 0.2s linear;
+}
+
+nav.active .menu {
+  display: block;
+  background-color: #e2d69a;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130px;
+  padding-top: 60px;
+  /* z-index: 1; */
+  text-align: left;
+}
+
+nav.active .menu li {
+  margin: 10px 20px;
+}
+
+nav.active .menu a {
+  font-size: 24px;
+}
